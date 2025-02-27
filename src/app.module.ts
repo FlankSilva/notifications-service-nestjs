@@ -1,7 +1,7 @@
 import { Module } from "@nestjs/common";
-import { AppController } from "./app.controller";
-import { PrismaService } from "./database/prisma.service";
-import { HttpModule } from "./http.module";
+import { AppController } from "./infra/app.controller";
+import { PrismaService } from "./infra/database/prisma.service";
+import { HttpModule } from "./infra/http.module";
 
 @Module({
   imports: [HttpModule],
